@@ -1,0 +1,19 @@
+{
+    "plugins": ["node"],
+    "extends":  [
+        "eslint:recommended",
+        "plugin:node/recommended"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "module",
+        "allowImportExportEverywhere": true,
+        "ecmaVersion": 2018
+      },
+
+    "env": {"es6": true},
+    "rules": {
+        "node/exports-style": ["error", "module.exports"],
+        "linebreak-style": 0
+    }
+}
